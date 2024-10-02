@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <main>
+        <img src="https://cdn-icons-png.flaticon.com/512/138/138849.png" alt="imagem de tarefas" id="imagem-lista">
+        <form id="form-tarefa">
+            <input id="input-item" class="input-item" type="text" placeholder="Digite a tarefa que deseja adicionar"></input>
+            <button class="button-item" id="adicionar-item">Salvar item</button>
+        </form>
+
+        <div class="container-lista">
+            <h2>Lista</h2>
+            <hr>
+
+            <ul id="lista">
+                <p id="mensagem-lista-vazia" style="display: block;"> Sua lista está vazia. Adicione alguma coisa!</p>
+            </ul>
+
+            <div id="container-lista-realizado">
+                <h2>Realizado</h2>
+                <hr />
+                <ul id="lista-realizado">
+
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js" type="module"></script>
+</body>
+</html>
