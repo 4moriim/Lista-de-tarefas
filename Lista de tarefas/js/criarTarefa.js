@@ -105,14 +105,3 @@ export function verificarListaVazia() {
         mensagemListavazia.style.display = "none";
     }
 }
-
-export const excluirItem = (elemento) => {
-    let confirmacao = confirm("Tem certeza de que deseja excluir esse item ?");
-
-    if (confirmacao){
-        elemento.remove();
-
-        verificarListaVazia(listaTarefas);
-        verificarListaComprados(listaTarefasRealizadas);
-    }
-}
